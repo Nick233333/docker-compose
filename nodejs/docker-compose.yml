@@ -1,0 +1,13 @@
+version: '3'
+services:
+  node:
+    image: node:10.24-alpine
+    hostname: node
+    container_name: my-node
+    working_dir: /home/node/app
+    command: npm config set registry https://registry.npm.taobao.org
+    command: node index.js
+    volumes:
+      - ./app:/home/node/app
+    ports:
+       - 3000:3000
