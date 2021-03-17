@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  golang:
+    build:
+      context: . 
+      dockerfile: Dockerfile
+    container_name: my-galang  
+    ports:
+      - "8080:8080"
+
+
