@@ -5,7 +5,7 @@ services:
     build:
       context: . 
       dockerfile: Dockerfile
-    container_name: my-galang  
+    container_name: my-golang  
     ports:
       - "8080:8080"
 
